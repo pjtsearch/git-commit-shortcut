@@ -52,7 +52,7 @@ if (process.argv[2] !== "--help" && process.argv[2] !== undefined){
 /____/
   `,'\x1b[0m');
   console.log(`
-git-commit-shortcut will run "git commit -am" with a commit message specified by you, and will then run "git push".
+git-commit-shortcut will run "git add --all", "git commit -am" with a commit message specified by you, and will then run "git push".
 
 USAGE:
 git-commit-shortcut '<message>'
