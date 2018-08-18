@@ -19,5 +19,5 @@ git-commit-shortcut is a fast way to commit all your changes. It will run "git a
 ### OPTIONS:
 |Arguement|Description                                                                                           |
 |---------|------------------------------------------------------------------------------------------------------|
-|MESSAGE  |Selects output file of globbed imports.                                                               |
+|MESSAGE  |Selects output file of globbed imports (in quotes).                                                               |
 
