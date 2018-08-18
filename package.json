@@ -1,0 +1,21 @@
+{
+  "name": "git-commit-shortcut",
+  "version": "1.0.0",
+  "description": "git-commit-shortcut is a fast way to commit all your changes.  It will run \"git commit -am\" with a commit message specified by you, and will then run \"git push\".",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": "github.com:pjtsearch/git-commit-shortcut",
+  "keywords": [
+    "git",
+    "commit",
+    "github"
+  ],
+  "bin": {
+    "git-commit-shortcut": "./index.js",
+    "ngcs": "./index.js"
+  },
+  "author": "Peter PJT <pjtsignups@gmial.com> (https://pjtsearch.com)",
+  "license": "GPL-3.0-or-later"
+}
