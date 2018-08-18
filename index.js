@@ -29,11 +29,11 @@ if (process.argv[2] !== "--help" && process.argv[2] !== undefined){
 git-commit-shortcut will run "git commit -am" with a commit message specified by you, and will then run "git push".
 
 USAGE:
-git-commit-shortcut <message>
+git-commit-shortcut '<message>'
 OR
-ngcs <message>
+ngcs '<message>'
 
 OPTIONS:
-MESSAGE     The commit message.
+MESSAGE     The commit message (in quotes).
   `);
 }
