@@ -2,7 +2,7 @@
 const { exec } = require('child_process');
 
 if (process.argv[2] !== "--help" && process.argv[2] !== undefined){
-  exec(`git commit -am '${process.argv[2]}' && git push`, (err, stdout, stderr) => {
+    exec(`git add --all`, (err, stdout, stderr) => {
   //   if (err.Error.indexOf("git commit -am ") === -1) {
   //     // node couldn't execute the command
   //     console.log(err);
@@ -14,6 +14,32 @@ if (process.argv[2] !== "--help" && process.argv[2] !== undefined){
     if (stderr !== ""){
       console.error(`${stderr}`);
     }
+    exec(`git commit -am '${process.argv[2]}'`, (err, stdout, stderr) => {
+    //   if (err.Error.indexOf("git commit -am ") === -1) {
+    //     // node couldn't execute the command
+    //     console.log(err);
+    //     //return;
+    //   }
+
+        // the *entire* stdout and stderr (buffered)
+        console.log(`${stdout}`);
+        if (stderr !== ""){
+        console.error(`${stderr}`);
+        }
+        exec(`git push`, (err, stdout, stderr) => {
+        //   if (err.Error.indexOf("git commit -am ") === -1) {
+        //     // node couldn't execute the command
+        //     console.log(err);
+        //     //return;
+        //   }
+
+            // the *entire* stdout and stderr (buffered)
+            console.log(`${stdout}`);
+            if (stderr !== ""){
+            console.error(`${stderr}`);
+            }
+        });
+    });
   });
 
 }else{
