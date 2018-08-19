@@ -10,7 +10,6 @@
 git-commit-shortcut is a fast way to commit all your changes. It will run "git add --all", "git commit -am" with a commit message specified by you, and will then run "git push".
 
 ### INSTALLATION:
-    NOT YET IMPLEMENTED
     npm install -g git-commit-shortcut
 
 ### USAGE:
